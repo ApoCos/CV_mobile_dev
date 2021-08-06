@@ -1,12 +1,43 @@
+
+
 body {
     background-color: rgb(241, 245, 230);
     font-family: "Calibri", system-ui, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10px;
 }
+  .menu {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        list-style: none;
+    }
+
+    ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+      }
 
 h1 {
     text-align: center;
-  }
+}
 
 #page1 {
     text-align: center;
 }
+
+img.photo_moi {
+    border-radius: 50%;
+    position: relative;
+  }
+
+
+header {
+    background-image: url("bureau.jpeg");
+    height: 500px;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+
