@@ -109,6 +109,8 @@ h1 {
 }
 
 img.photo_moi {
+    width: auto;
+    height: auto;
     border-radius: 50%;
     display: block;
     margin: auto;
