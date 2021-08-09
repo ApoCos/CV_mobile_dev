@@ -4,9 +4,9 @@ body {
     background-color: rgba(5,99,103,255);
     font-family: "Calibri", system-ui, Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 10px;
     color: white;
     font-size: 12px;
+    padding: 10px;
 }
 
 header {
@@ -15,6 +15,7 @@ header {
     background-size: cover;
     object-fit: cover;
     position: relative;
+    margin-bottom: 10px;
 }
 
 /*button burger creation middle bar*/
@@ -22,7 +23,7 @@ header {
 width: 35px;
 height: 22px;
 cursor: pointer;
-position: absolute;
+position: fixed;
 right: 0px;
 top: auto;
 }
@@ -30,8 +31,8 @@ top: auto;
 .button_burger span {
     width: 70%;
     height: 4px;
-    background-color: rgba(5,99,103,255);
-    display: block; 
+    background-color: black;
+    display: block;
     position: absolute;
     top: 70%;
     transform: translateY(-50%);
@@ -44,7 +45,7 @@ top: auto;
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: rgba(5,99,103,255);
+    background-color: black;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -62,31 +63,42 @@ top: auto;
 
 .button_burger.active span::before {
     transform: translateY(0px) rotateZ(45deg);
+    background-color: white;
 }
 
 .button_burger.active span::after {
     transform: translateY(0px) rotateZ(-45deg);
+    background-color: white; 
 }
 
-/*menu in burger*/
+/*menu inside burger*/
 .menu {
     display: none;
+    background-color: rgba(0,0,0,0.8);
+    height: auto;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    position: fixed;
 }
 
 .menu.visible {
     display: block;
-    background-color: teal;
 }
 
-.menu ul li a {
+.menu ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0px;
+    padding: 50px 0;
+}
+
+.menu ul li a, i {
+    font-size: 20px;
     color: white;
-    background-color: teal;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
-    position: absolute;
-    display: block;
-    right: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 h1 {
@@ -125,7 +137,6 @@ p.poste {
     padding: 20px;
 }
 .competences {
-    /*list-style: url("feuille.png");*/
     color: white;
 }
 
@@ -157,3 +168,15 @@ p.poste {
     border-radius: 60px;
     padding: 20px;
 }
+
+.fa-lightbulb {
+    width:100%;
+    height:70px;
+    display: block;
+    height: 0;
+    color: black;
+}
+
+.fa-lightbulb.active {
+    color: white;
+    }
