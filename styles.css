@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: var(--background);
+    background-color: var(--background);
     font-family: "Calibri", system-ui, Arial, Helvetica, sans-serif;
     margin: 0;
     color: var(--ecriture);
@@ -110,14 +110,15 @@ h1 {
     color: var(--ecritureHeader)
 }
 
-img.photo_moi {
-    width: auto;
-    height: auto;
+figure {
+    background-image: url(./photo_cv3.jpg);
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     display: block;
     margin: auto;
+    background-size: contain;
 }
-
 .npp {
     font-size: large;
     font-weight: bold;
@@ -141,7 +142,6 @@ p.poste {
 }
 
 #page3 {
-    font-size: 12px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid;
@@ -151,7 +151,6 @@ p.poste {
 }
 
 #page4 {
-    font-size: 12px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid;
@@ -174,4 +173,90 @@ p.poste {
     color: var(--ecritureHeader);
     font-size: 30px;
     padding: 0 0 5px 5px;
+}
+
+@media only screen and (min-device-width: 600px) {
+    header {
+        background-image: none;
+    }
+
+    figure {
+    background-image: url(./photo_cv4.jpg);
+    border-radius: 5%;
+    position: absolute;
+    top: 40px; 
+    left: 100px
+    }
+
+.button_burger {
+    display: none;
+}
+
+ .container1 {
+     display: flex;
+ }
+
+ .container2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+ #page2 {
+    width: calc(30% - 20px);
+    border: none;
+    padding: 20px;
+    margin: 0;
+ }
+
+p.poste {
+    color: black;
+}
+
+.npp {
+color: black;
+}
+
+.fa-lightbulb {
+     position: absolute;
+     color: black;
+     top: 20px;
+     right: 20px;
+ }
+ .coordonnees {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ #page3 {
+    width: calc(70% - 50px);
+}
+
+#page4 {
+    width: calc(70% - 50px);
+}
+ #page5 {
+    width: calc(30% - 20px);
+    border: none;
+    padding: 20px;
+    margin: 0;
+    flex-wrap: wrap;
+ }
+.coordonnees li {
+    margin-bottom: 10px;
+}
+
+.plus li {
+    margin-bottom: 10px;
+}
+ h1 {
+     display: none;
+ }
+}
+
+@media only screen and (min-device-width: 760px) {
+
 }

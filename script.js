@@ -23,4 +23,5 @@ function changeMode() {
         document.documentElement.style.setProperty("--background", "rgba(5,99,103,255)");
         toggleTheme++;
     }
+    
 }
