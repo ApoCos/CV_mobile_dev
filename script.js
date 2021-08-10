@@ -6,8 +6,21 @@ burger.addEventListener("click", () => {
     menu.classList.toggle("visible");
 })
 
-var darkmode = document.querySelector(".fa-lightbulb");
+// Darkmode
+var lightmode = document.querySelector(".far fa-lightbulb");
+let toggleTheme = 1;
 
-darkmode.addEventListener("click", () => {
-    darkmode.classList.toggle("active")
-})
+function changeMode() {
+
+    if(toggleTheme != 0 ) {
+        document.documentElement.style.setProperty("--ecritureHeader", "rgb(241, 245, 230)"); 
+        document.documentElement.style.setProperty("--ecriture", "rgba(5,99,103,255)"); 
+        document.documentElement.style.setProperty("--background", "rgb(241, 245, 230)"); 
+        toggleTheme--;
+    } else {
+        document.documentElement.style.setProperty("--ecritureHeader", "rgba(5,99,103,255)");
+        document.documentElement.style.setProperty("--ecriture", "white");
+        document.documentElement.style.setProperty("--background", "rgba(5,99,103,255)");
+        toggleTheme++;
+    }
+}
