@@ -257,6 +257,12 @@ color: black;
  }
 }
 
-@media only screen and (min-device-width: 760px) {
 
+@media only screen and (min-device-width: 760px) {
+body {
+    width: 800px;
+}
+html {
+    background-color: white;
+}
 }
