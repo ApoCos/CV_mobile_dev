@@ -10,8 +10,7 @@ body {
     font-family: "Calibri", system-ui, Arial, Helvetica, sans-serif;
     margin: 0;
     color: var(--ecriture);
-    font-size: 12px;
-    padding: 10px;
+    font-size: 13px;
 }
 
 header {
@@ -91,7 +90,10 @@ top: auto;
 .menu ul {
     list-style-type: none;
     text-align: center;
-    padding: 50px 0;
+}
+
+.menu ul li {
+    margin: 30px;
 }
 
 .menu ul li a {
@@ -105,8 +107,8 @@ top: auto;
 .fa-lightbulb {
     display: block;
     color: var(--ecritureHeader);
-    font-size: 30px;
-    padding: 0 0 5px 5px;
+    font-size: 35px;
+    padding: 0 0 5px 10px;
     cursor: pointer;
 }
 
@@ -115,7 +117,11 @@ h1 {
     font-weight: bold;
     text-align: center;
     margin-top: 0;
-    color: var(--ecritureHeader);
+    color: rgb(241, 245, 230);
+}
+
+h3 {
+    text-decoration: underline;
 }
 
 figure {
@@ -129,7 +135,7 @@ figure {
 }
 
 .npp {
-    font-size: large;
+    font-size: 20px;
     font-weight: bold;
     color: rgba(5,99,103,255);
     text-align: center;
@@ -141,43 +147,66 @@ p.poste {
     color: rgba(5,99,103,255);
 }
 
+p.structure {
+    font-style: italic;
+    font-weight: bold;
+}
+
 #page2 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    margin: 10px;
     border: 1px solid;
-    border-radius: 60px;
+    border-radius: 40px;
     padding: 20px;
+}
+
+#page2 p {
+    line-height: 1.5em;
 }
 
 #page3 {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px;
+    margin-top: 0;
     border: 1px solid;
-    border-radius: 60px;
+    border-radius: 40px;
     padding: 20px;
-    margin-bottom: 10px;
+}
+
+#page3 p {
+    line-height: 1.5em;
 }
 
 #page4 {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px;
+    margin-top: 0;
     border: 1px solid;
-    border-radius: 60px;
+    border-radius: 40px;
     padding: 20px;
-    margin-bottom: 10px;
+}
+
+#page4 p {
+    line-height: 1.5em;
 }
 
 #page5 {
-    font-size: 12px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px;
     border: 1px solid;
-    border-radius: 60px;
+    border-radius: 40px;
     padding: 20px;
 }
 
+ul {
+    padding: 0;
+}
+
+ul li {
+    margin-left: 20px;
+}
 @media only screen and (min-device-width: 600px) {
+
+body {
+    padding: 10px;
+}
+
 header {
         background-image: none;
 }
