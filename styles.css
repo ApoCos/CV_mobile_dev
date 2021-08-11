@@ -1,7 +1,8 @@
 :root {
-    --ecriture: white;
+    --ecriture: rgb(241, 245, 230);
     --background: rgba(5,99,103,255);
     --ecritureHeader: rgba(5,99,103,255);
+    --border-color: rgb(241, 245, 230);
 }
 
 body {
@@ -102,12 +103,19 @@ top: auto;
     border-bottom: 2px solid rgba(255,255,255,0.2);
 }
 
+.fa-lightbulb {
+    display: block;
+    color: var(--ecritureHeader);
+    font-size: 30px;
+    padding: 0 0 5px 5px;
+}
+
 h1 {
     font-size: xx-large; 
     font-weight: bold;
     text-align: center;
     margin-top: 0;
-    color: var(--ecritureHeader)
+    color: var(--ecritureHeader);
 }
 
 figure {
@@ -168,35 +176,28 @@ p.poste {
     padding: 20px;
 }
 
-.fa-lightbulb {
-    display: block;
-    color: var(--ecritureHeader);
-    font-size: 30px;
-    padding: 0 0 5px 5px;
+@media only screen and (min-device-width: 600px) {
+header {
+        background-image: none;
 }
 
-@media only screen and (min-device-width: 600px) {
-    header {
-        background-image: none;
-    }
-
-    figure {
+figure {
     background-image: url(./photo_cv4.jpg);
-    border-radius: 5%;
+    border-radius: 50%;
     position: absolute;
-    top: 40px; 
-    left: 100px
-    }
+    top: 10px; 
+    left: 50px
+}
 
 .button_burger {
     display: none;
 }
 
- .container1 {
-     display: flex;
- }
+.container1 {
+    display: flex;
+}
 
- .container2 {
+.container2 {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -205,62 +206,77 @@ p.poste {
     display: flex;
     flex-wrap: wrap;
 }
- #page2 {
+
+.container4 {
+    border: dashed var(--border-color);
+}
+
+#page2 {
     width: calc(30% - 20px);
     border: none;
     padding: 20px;
     margin: 0;
- }
-
-p.poste {
-    color: black;
 }
 
-.npp {
-color: black;
-}
-
-.fa-lightbulb {
-     position: absolute;
-     color: black;
-     top: 20px;
-     right: 20px;
- }
- .coordonnees {
-    display: flex;
-    flex-wrap: wrap;
- }
-
- #page3 {
+#page3 {
     width: calc(70% - 50px);
 }
 
 #page4 {
     width: calc(70% - 50px);
 }
- #page5 {
+
+#page5 {
     width: calc(30% - 20px);
     border: none;
     padding: 20px;
     margin: 0;
     flex-wrap: wrap;
- }
-.coordonnees li {
+}
+
+p.poste {
+    display: block;
+    color: var(--ecriture);
+}
+
+.npp {
+    color: var var(--ecritureHeader);
+}
+
+.npp p {
+color: var var(--ecritureHeader);
+}
+
+.fa-lightbulb {
+    position: absolute;
+    color: var(--ecriture);
+    top: 20px;
+    right: 20px;
+}
+
+.coordonnees {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
     margin-bottom: 10px;
 }
 
-.plus li {
-    margin-bottom: 10px;
+h1 {
+    display: none;
 }
- h1 {
-     display: none;
- }
 }
 
 
 @media only screen and (min-device-width: 760px) {
 body {
     width: 800px;
+    margin: 0 auto;
 }
 html {
     background-color: white;
