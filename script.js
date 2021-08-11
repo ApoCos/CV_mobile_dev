@@ -1,10 +1,18 @@
 var burger = document.querySelector(".button_burger");
 var menu = document.querySelector(".menu");
 
+// open menu
 burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     menu.classList.toggle("visible");
 })
+
+// close menu
+menu.addEventListener("click", () => {
+    burger.classList.remove("active");
+    menu.classList.remove("visible");
+})
+
 
 // Darkmode
 var lightmode = document.querySelector(".far fa-lightbulb");
