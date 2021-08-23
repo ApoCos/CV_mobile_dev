@@ -1,7 +1,7 @@
 :root {
     --ecriture: rgb(241, 245, 230);
-    --background: rgba(5,99,103,255);
-    --ecritureHeader: rgba(5,99,103,255);
+    --background: rgba(5, 99, 103, 255);
+    --ecritureHeader: rgba(5, 99, 103, 255);
     --border-color: rgb(241, 245, 230);
 }
 
@@ -22,13 +22,15 @@ header {
     margin-bottom: 10px;
 }
 
+
 /*button burger creation middle bar*/
+
 .button_burger {
-width: 35px;
-height: 22px;
-position: fixed;
-right: 10px;
-top: auto;
+    width: 35px;
+    height: 22px;
+    position: fixed;
+    right: 10px;
+    top: auto;
 }
 
 .button_burger span {
@@ -42,8 +44,11 @@ top: auto;
     transition: background-color 0.5s ease-in-out;
 }
 
+
 /*top / bottom burger bar icon*/
-.button_burger span::before, .button_burger span::after{
+
+.button_burger span::before,
+.button_burger span::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -52,14 +57,17 @@ top: auto;
     transition: transform 0.5s ease-in-out;
 }
 
-.button_burger span::before{
+.button_burger span::before {
     transform: translateY(-10px);
 }
 
-.button_burger span::after{
+.button_burger span::after {
     transform: translateY(10px);
 }
+
+
 /* button animation*/
+
 .button_burger.active span {
     background-color: transparent;
 }
@@ -72,10 +80,12 @@ top: auto;
     transform: translateY(0px) rotateZ(-45deg);
 }
 
+
 /*menu inside burger*/
+
 .menu {
     display: none;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     height: auto;
     width: 100%;
     top: 40px;
@@ -101,7 +111,7 @@ top: auto;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 2px solid rgba(255,255,255,0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .fa-lightbulb {
@@ -113,7 +123,7 @@ top: auto;
 }
 
 h1 {
-    font-size: xx-large; 
+    font-size: xx-large;
     font-weight: bold;
     text-align: center;
     margin-top: 0;
@@ -137,14 +147,14 @@ figure {
 .npp {
     font-size: 20px;
     font-weight: bold;
-    color: rgba(5,99,103,255);
+    color: rgba(5, 99, 103, 255);
     text-align: center;
 }
 
 p.poste {
     font-size: x-large;
     font-weight: bold;
-    color: rgba(5,99,103,255);
+    color: rgba(5, 99, 103, 255);
 }
 
 p.structure {
@@ -200,115 +210,96 @@ ul {
 
 ul li {
     margin-left: 20px;
+    /* position: ; */
 }
+
 @media only screen and (min-device-width: 600px) {
-
-body {
-    padding: 10px;
-}
-
-header {
+    body {
+        padding: 10px;
+    }
+    header {
         background-image: none;
+    }
+    figure {
+        background-image: url(./photo_cv4.jpg);
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 50px
+    }
+    .button_burger {
+        display: none;
+    }
+    .container1 {
+        display: flex;
+    }
+    .container2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .container3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container4 {
+        border: dashed var(--border-color);
+    }
+    #page2 {
+        width: calc(30% - 20px);
+        border: none;
+        padding: 20px;
+        margin: 0;
+    }
+    #page3 {
+        width: calc(70% - 50px);
+    }
+    #page4 {
+        width: calc(70% - 50px);
+    }
+    #page5 {
+        width: calc(30% - 20px);
+        border: none;
+        padding: 20px;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    p.poste {
+        display: block;
+        color: var(--ecriture);
+    }
+    .npp {
+        color: var var(--ecritureHeader);
+    }
+    .npp p {
+        color: var var(--ecritureHeader);
+    }
+    .fa-lightbulb {
+        position: absolute;
+        color: var(--ecriture);
+        top: 20px;
+        right: 20px;
+    }
+    .coordonnees {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    h1 {
+        display: none;
+    }
 }
-
-figure {
-    background-image: url(./photo_cv4.jpg);
-    border-radius: 50%;
-    position: absolute;
-    top: 10px; 
-    left: 50px
-}
-
-.button_burger {
-    display: none;
-}
-
-.container1 {
-    display: flex;
-}
-
-.container2 {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.container3 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container4 {
-    border: dashed var(--border-color);
-}
-
-#page2 {
-    width: calc(30% - 20px);
-    border: none;
-    padding: 20px;
-    margin: 0;
-}
-
-#page3 {
-    width: calc(70% - 50px);
-}
-
-#page4 {
-    width: calc(70% - 50px);
-}
-
-#page5 {
-    width: calc(30% - 20px);
-    border: none;
-    padding: 20px;
-    margin: 0;
-    flex-wrap: wrap;
-}
-
-p.poste {
-    display: block;
-    color: var(--ecriture);
-}
-
-.npp {
-    color: var var(--ecritureHeader);
-}
-
-.npp p {
-color: var var(--ecritureHeader);
-}
-
-.fa-lightbulb {
-    position: absolute;
-    color: var(--ecriture);
-    top: 20px;
-    right: 20px;
-}
-
-.coordonnees {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-ul {
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-h1 {
-    display: none;
-}
-}
-
 
 @media only screen and (min-device-width: 760px) {
-body {
-    width: 800px;
-    margin: 0 auto;
-}
-html {
-    background-color: white;
-}
+    body {
+        width: 800px;
+        margin: 0 auto;
+    }
+    html {
+        background-color: white;
+    }
 }
