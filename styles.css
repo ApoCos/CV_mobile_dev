@@ -236,6 +236,11 @@ ul li {
     padding: 5px;
 }
 
+img {
+    vertical-align: middle;
+    /* animation: rotate; */
+}
+
 @media only screen and (min-device-width: 600px) {
     body {
         padding: 10px;
@@ -323,10 +328,6 @@ ul li {
     .menu.visible {
         display: none;
     }
-}
-
-img {
-    vertical-align: middle;
 }
 
 @media only screen and (min-device-width: 760px) {
