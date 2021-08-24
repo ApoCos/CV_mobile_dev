@@ -19,6 +19,8 @@ body {
     /* Safari and Chrome */
     -o-animation: fadein 2s;
     /* Opera */
+    /*Transition light/dark mode*/
+    transition: 1s;
 }
 
 header {
@@ -128,11 +130,19 @@ header {
 /*end menu inside burger*/
 
 .fa-lightbulb {
-    display: block;
-    color: var(--ecritureHeader);
-    font-size: 35px;
-    padding: 0 0 5px 10px;
+    color: var(--ecriture);
+    font-size: 25px;
+    margin: 3px 6.5px;
     cursor: pointer;
+}
+
+.circle {
+    display: block;
+    background: var(--background);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
 }
 
 h1 {
@@ -281,10 +291,13 @@ ul li {
         color: var(--ecriture);
     }
     .npp {
-        color: var var(--ecritureHeader);
+        color: var(--ecriture);
     }
     .npp p {
-        color: var var(--ecritureHeader);
+        color: var(--ecriture);
+    }
+    .circle {
+        background-color: transparent;
     }
     .fa-lightbulb {
         position: absolute;
