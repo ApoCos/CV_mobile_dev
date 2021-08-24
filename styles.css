@@ -11,6 +11,14 @@ body {
     margin: 0;
     color: var(--ecriture);
     font-size: 13px;
+    /*for animation load page*/
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
 }
 
 header {
@@ -20,6 +28,7 @@ header {
     object-fit: cover;
     position: relative;
     margin-bottom: 10px;
+    /* opacity: 0; */
 }
 
 
@@ -95,6 +104,7 @@ header {
 
 .menu.visible {
     display: block;
+    animation: fadein 0.5s;
 }
 
 .menu ul {
@@ -113,6 +123,9 @@ header {
     font-weight: bold;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
+
+
+/*end menu inside burger*/
 
 .fa-lightbulb {
     display: block;
@@ -210,11 +223,8 @@ ul {
 
 ul li {
     margin-left: 20px;
+    padding: 5px;
 }
-
-
-/* ul.competence_tech {
-} */
 
 @media only screen and (min-device-width: 600px) {
     body {
@@ -297,6 +307,9 @@ ul li {
     h1 {
         display: none;
     }
+    .menu.visible {
+        display: none;
+    }
 }
 
 img {
@@ -310,5 +323,47 @@ img {
     }
     html {
         background-color: white;
+    }
+}
+
+
+/* Animation load page*/
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
