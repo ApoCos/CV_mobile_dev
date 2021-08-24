@@ -210,8 +210,11 @@ ul {
 
 ul li {
     margin-left: 20px;
-    /* position: ; */
 }
+
+
+/* ul.competence_tech {
+} */
 
 @media only screen and (min-device-width: 600px) {
     body {
@@ -285,13 +288,19 @@ ul li {
     }
     ul {
         padding: 0;
+        vertical-align: middle;
     }
     li {
-        margin-bottom: 10px;
+        padding: 5px;
+        vertical-align: middle;
     }
     h1 {
         display: none;
     }
+}
+
+img {
+    vertical-align: middle;
 }
 
 @media only screen and (min-device-width: 760px) {
